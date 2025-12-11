@@ -126,7 +126,7 @@ Built with **React + Vite** and powered by the **OMDb API**.
 ## 🔑 OMDb API Key
 
 This project uses the **OMDb API**.  
-In the code, there is a constant:
+In the code, there is a constant
 
 ```js
 const KEY = "YOUR_OMDB_API_KEY";
