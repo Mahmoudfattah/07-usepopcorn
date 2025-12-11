@@ -233,9 +233,9 @@ function NumResults({ movies }) {
     <p className="num-results">
      { movies.length > 1 ? 
      <>
-       Found
-     <strong>{movies?.length}</strong>
-      results
+       
+     <strong>Found {movies?.length} results </strong>
+    
      </>
      
       : 
