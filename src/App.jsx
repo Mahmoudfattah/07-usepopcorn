@@ -48,7 +48,7 @@ import { useEffect, useState, useRef } from "react";
 // ];
 
 const average = (arr) =>
-arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
+  arr.length ? arr.reduce((acc, cur) => acc + cur / arr.length, 0) : 0;
 
 
 const KEY = "f84fc31d";
@@ -58,7 +58,7 @@ export default function App() {
   const [movies, setMovies] = useState([]);
   const [watched, setWatched] = useState(() => {
     const storedValue = localStorage.getItem("watched");
-    return JSON.parse(storedValue);
+     return storedValue ? JSON.parse(storedValue) : [];
   });
   const [query, setQuery] = useState("interstellar");
   const [loading, setLoading] = useState(false);
